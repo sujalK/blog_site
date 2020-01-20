@@ -1,0 +1,96 @@
+/* For less than 1300px width devices */
+@media (max-width: 1300px) {
+    #blog-post .post-items {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1fr;
+    }
+
+    #blog-post .post-items .item .item-first img {
+        width: 600px;
+        height: 400px;
+    }
+
+    /* #footer .inner-items {
+        grid-template-columns: repeat(2, 1fr);
+    } */
+
+}
+
+/* For less than 1260px width devices */
+@media (max-width: 1260px) {
+
+    #blog-post .post-items {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    #blog-post .post-items .item .item-first img {
+        width: 100%;
+        justify-self: center;
+    }
+
+}
+
+/* For less than 800px devices */
+@media (max-width: 800px) {
+
+    #footer {
+        display: block;
+        text-align: left;
+    }
+
+    #footer .inner-items {
+        display: block;
+    }
+
+    #footer .inner-items .info {
+        padding-left: 0;
+    }
+
+    #footer .inner-items .social {
+        margin-left: -1rem;
+    }
+
+}
+
+/* For mobile devices having width 500px and less */
+@media (max-width: 500px) {
+    /* Header */
+    #main-header .main-nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #main-header .main-inner {
+        height: 70vh;
+    }
+
+    #main-header .main-inner .main-nav .list {
+        padding-bottom: 2rem;
+        margin-top: -.5rem;
+        color: rosybrown;
+    }
+
+    #main-header .main-inner .main-content {
+        height: 30vh;
+    }
+
+
+    #main-header .main-nav .list a {
+        color: #ebe123;
+    }
+
+    #main-header .main-inner .main-content .subtitle {
+        font-size: 1.5rem;
+    }
+
+    #main-header .main-inner .main-content > h1 {
+        font-size: 2rem;
+    }
+
+    #main-header .main-inner .main-content p:last-child {
+        line-height: 2;
+        font-size: 1rem;
+    }
+}
